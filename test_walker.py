@@ -31,6 +31,6 @@ def visualise(individual):
 
 with (open("walker1.pickle", "rb")) as openfile:
     walker = pickle.load(openfile)
-reward = evaluate(walker, max_steps=1500, graphics=True)
+reward = evaluate(walker, max_steps=1600, graphics=True)
 visualise(walker)
 print("Reward:", reward)
